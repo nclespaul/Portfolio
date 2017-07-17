@@ -8,10 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Off Canvas Template for Bootstrap</title>
+    <title>Darrell Freeman's Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap custom CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/offcanvas.css" rel="stylesheet">
@@ -33,10 +36,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#"><img id="brand" src="images/f6.png" style="width: 64px"/>Darrells Portfolio</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -49,49 +52,73 @@
 
       <div class="row row-offcanvas row-offcanvas-right">
 
-        <div class="col-xs-12 col-sm-9">
+        <div class="col-lg-12">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
           <div class="jumbotron">
-            <h1>Hello, world!</h1>
-            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+            <img class="img-rounded" src="images/headshot.jpg" style="width : 200px">
+            <span class="firstLetter">H</span><p style="text-align: justify">i there!  My name is Darrell Freeman, and I'm a full stack web / software developer based in Houston, TX.  Specializing in the MERN stack,
+              I can pretty up any site, set up servers, and create and maintain your backend databases.  Poke around my portfolio here, and contact me if I can help with any of your project needs or provide any 
+              additional information.</p>
           </div>
-          <div class="row">
+          <div class="row" id="three">
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              <h2 style="text-align: center">Train Scheduler</h2>
+              <a href="https://nclespaul.github.io/Assignments/Assignment7/index.html"><img class="img-thumbnail" src="images/train.png"></a>
+              <p style="text-align: justify">
+                All Aboard!!  This simple app allows entry of incoming train information, including the train name, the destination, and the frequency of arrival.  The display is then 
+                updated with the arrival time of the next incoming train, as well as the number of minutes until arrival.
+              </p>
+              <p style="text-align: justify"><strong>Tools Used:</strong> HTML5, CSS3, Javascript, Bootstrap, Jquery, Moment.js, Firebase, Github Pages.</p>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              <h2 id="mars" style="text-align: center">The M.A.R.S. Project</h2>
+              <a href="https://ancient-coast-65501.herokuapp.com/"><img class="img-thumbnail" src="images/mars.png"></a>
+              <p style="text-align: justify">
+                Math anxiety affects approximately 20% of the population to varying degrees, and is quantified using a standardized survey.  This app is intended for use as a tool for filtering the results of that 
+                survey to provide information to researchers and administrators for use in tailoring budgets, resources, and techniques towards reducing the anxieties experienced by the particular subgroup they are 
+                interested in.
+              </p>
+              <p style="text-align: justify">
+                <strong>Tools Used:</strong> HTML5, CSS3, Javascript, JQuery, JSON, Plotly.js, Node.js, Express, Sequelize, MySQL, Github, Heroku, NPM's (express, body-parser, mysql, mysql2, path, sequelize, 
+                sequelize-cli)
+              </p>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              <h2 style="text-align: center">Friend Finder</h2>
+              <a href="https://nclespaul.github.io/Assignments/Assignment7/index.html"><img class="img-thumbnail" src="images/friend.png"></a>
+              <p style="text-align: justify">
+                Ready to find that someone just perfect for you?  Take our survey and we'll hook you up with a match pretending to be just that!!  We guarantee no spam, no malware, and no satisfaction.  
+              </p>
+              <p style="text-align: justify"><strong>Tools Used:</strong> HTML5, CSS3, Javascript, JQuery, Node.js, NPM's (express, path, body-parser)</p>
             </div><!--/.col-xs-6.col-lg-4-->
+          </div>
+          <div class="row" id="two">
+            <div class="col-xs-6 col-lg-1"></div>
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              <h2 style="text-align: center">Full Stack Warrior</h2>
+              <a href="https://nclespaul.github.io/TriviaGame/"><img class="img-thumbnail" src="images/warrior.png"></a>
+              <p style="text-align: justify">
+                The Full Stack Warrior app is a Skyrim themed trivia game consisting of eight questions that must be answered within sixty seconds.  The questions do not appear until the start button is pressed, 
+                starting the timer.  Once the time expires, the number of correct and incorrect questions is displayed.  The game can then be started over if desired. 
+              </p>
+              <p style="text-align: justify"><strong>Tools Used:</strong> HTML, CSS, Bootstrap, Javascript, JQuery.</p>
             </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-2"></div>
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              <h2 style="text-align: center">Friend Finder</h2>
+              <a href="https://nclespaul.github.io/Assignments/Assignment7/index.html"><img class="img-thumbnail" src="images/friend.png"></a>
+              <p style="text-align: justify">
+                Ready to find that someone just perfect for you?  Take our survey and we'll hook you up with a match pretending to be just that!!  We guarantee no spam, no malware, and no satisfaction.  
+              </p>
+              <p style="text-align: justify"><strong>Tools Used:</strong> HTML5, CSS3, Javascript, JQuery, Node.js, NPM's (express, path, body-parser)</p>
             </div><!--/.col-xs-6.col-lg-4-->
-            <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-1"></div>
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->
 
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+        <!-- <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
           <div class="list-group">
             <a href="#" class="list-group-item active">Link</a>
             <a href="#" class="list-group-item">Link</a>
@@ -104,7 +131,7 @@
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
           </div>
-        </div><!--/.sidebar-offcanvas-->
+        </div> --> <!--/.sidebar-offcanvas--> 
       </div><!--/row-->
 
       <hr>

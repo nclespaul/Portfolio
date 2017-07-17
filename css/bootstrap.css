@@ -101,6 +101,9 @@ hr {
 pre {
   overflow: auto;
 }
+#three {
+  margin-bottom: 20px;
+}
 code,
 kbd,
 pre,
@@ -234,6 +237,7 @@ th {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
@@ -1114,7 +1118,10 @@ figure {
 }
 img {
   vertical-align: middle;
+  max-width: 360px;
+  margin-bottom: 20px;
 }
+
 .img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
@@ -1133,9 +1140,9 @@ img {
   height: auto;
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #fff;
+  background-color: #512115;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -1268,7 +1275,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 27px;
 }
 h3,
 .h3 {
@@ -4272,18 +4279,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  float: left;
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
 .navbar-brand > img {
-  display: block;
+  padding: 7px 14px;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -4955,21 +4961,44 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+.firstLetter{
+  float       : left;
+  font-size   : 4.2em;
+  line-height : 0.5;
+  margin      : 0.5em 0.05em 0 0;
+}
+
+.firstLetter + span{
+  margin-left : -0.5em;
+  font-weight: 200;
+  font-size: 1.8em;
+}
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  height: 250px;
   color: inherit;
-  background-color: #eee;
+  background-color: white;
+  border-bottom: 3px solid #bbb;
+  border-radius: 0 !important;
+  margin-top: 30px;
+}
+.jumbotron img {
+  float: left;
+  margin: 0 20px 10px 0;
+
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
 }
 .jumbotron p {
+  margin-top: 30px;
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 200;
+  padding-top: 20px;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -4978,20 +5007,23 @@ a.badge:focus {
 .container-fluid .jumbotron {
   padding-right: 15px;
   padding-left: 15px;
-  border-radius: 6px;
 }
 .jumbotron .container {
   max-width: 100%;
 }
+
+.row p {
+  font-size: 16px;
+}
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
+    padding-top: 0px;
     padding-bottom: 48px;
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
     padding-right: 60px;
-    padding-left: 60px;
+    padding-left: 20px;
   }
   .jumbotron h1,
   .jumbotron .h1 {
