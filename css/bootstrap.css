@@ -98,6 +98,18 @@ hr {
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
+#contact {
+  float: right;
+  margin-top: 25px;
+  margin-right: -3px;
+}
+
+
+#contact img {
+  width: 40px;
+  margin: 10px 5px;
+}
+
 pre {
   overflow: auto;
 }
