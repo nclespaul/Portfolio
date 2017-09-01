@@ -278,7 +278,16 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 515px) {
+
+  #Hi {
+    position: absolute;
+    top: 240px;
+    display: block;
+    margin-top: 0;
+    font-size: 1.1em;
+    width: 90%;
+  }
 
   .row {
     margin-top: 30px;
@@ -295,3 +304,20 @@ footer {
   footer {
     padding-top: 0;
   }
+}
+
+@media screen and (max-width: 450px) {
+
+  #three {
+    margin-top: 100px;
+  }
+
+  #Hi {
+    position: absolute;
+    top: 240px;
+    display: block;
+    margin-top: 0;
+    font-size: 1em;
+    width: 85%;
+  }
+}
